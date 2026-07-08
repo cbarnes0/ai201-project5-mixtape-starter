@@ -428,3 +428,12 @@ don't cover: (1) Sunday → Monday (consecutive, crossing the boundary the *othe
 direction) now correctly increments 1 → 2, and (2) Friday → Monday (a genuine two-day
 skip that happens to span a Sunday) still correctly resets to 1 — confirming the fix
 removed the erroneous special case without weakening the real skipped-day reset logic.
+
+---
+
+## Commit History (`bugfix/mixtape`)
+
+Three fixes, each its own `fix:`-prefixed commit, plus a separate `docs:` commit for
+this file — no bundling of unrelated changes:
+
+![git log --oneline on bugfix/mixtape, showing separate fix: commits for each bug plus a docs: commit](docs/git-log-bugfix-mixtape.png)
